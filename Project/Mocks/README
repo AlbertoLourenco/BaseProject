@@ -1,0 +1,18 @@
+//-------------------------------------------------------
+//  README
+//  Created at 4/19/22
+//-------------------------------------------------------
+
+This document represents the version of the API during the development of this project.
+
+Below is the list of each service used and the date of its versioning during the implementation / integration.
+
+/-----------------------------------------------/
+/   Mock                        -   Date        /
+/-----------------------------------------------/
+/   login                       -   4/19/2022   /
+/   cities                      -   0/00/2022   /
+/   ufs                         -   0/00/2022   /
+/   token                       -   0/00/2022   /
+/-----------------------------------------------/
+

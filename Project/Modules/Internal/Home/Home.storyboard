@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="9Yy-KL-NQl">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hgv-Wg-YCc" customClass="HomeViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1a7-bW-GTI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irb-sE-n55">
+                                <rect key="frame" x="157" y="302" width="100" height="32"/>
+                                <color key="backgroundColor" name="Blue-Purple"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LCu-Tr-xVr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show detail"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showDetail" destination="hgv-Wg-YCc" eventType="touchUpInside" id="ThZ-wq-85l"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Bw-sD-C36">
+                                <rect key="frame" x="141.66666666666666" y="349" width="130.99999999999997" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="3oz-5X-Fjh"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeThemeWithSender:" destination="hgv-Wg-YCc" eventType="valueChanged" id="NMW-d3-BcY"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-jv-DfA">
+                                <rect key="frame" x="157" y="395" width="100" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="c9c-5W-HFw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" name="Red"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logout" destination="hgv-Wg-YCc" eventType="touchUpInside" id="TkM-9T-Opj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pbb-H5-WIn"/>
+                        <color key="backgroundColor" name="White-Black"/>
+                        <constraints>
+                            <constraint firstItem="5Bw-sD-C36" firstAttribute="centerX" secondItem="1a7-bW-GTI" secondAttribute="centerX" id="5x0-Tl-PIt"/>
+                            <constraint firstItem="Irb-sE-n55" firstAttribute="centerX" secondItem="1a7-bW-GTI" secondAttribute="centerX" id="Kdh-J8-AZo"/>
+                            <constraint firstItem="5Bw-sD-C36" firstAttribute="top" secondItem="Irb-sE-n55" secondAttribute="bottom" constant="15" id="NgL-d4-Nmg"/>
+                            <constraint firstItem="PPT-jv-DfA" firstAttribute="top" secondItem="5Bw-sD-C36" secondAttribute="bottom" constant="15" id="aUF-MB-6eK"/>
+                            <constraint firstItem="PPT-jv-DfA" firstAttribute="centerX" secondItem="1a7-bW-GTI" secondAttribute="centerX" id="tCq-Zc-fbs"/>
+                            <constraint firstItem="Irb-sE-n55" firstAttribute="centerY" secondItem="1a7-bW-GTI" secondAttribute="centerY" constant="-50" id="yyO-SD-TcI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scTheme" destination="5Bw-sD-C36" id="d5N-eX-1EW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGD-xa-Y01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Blue-Purple">
+            <color red="0.27900001406669617" green="0.3880000114440918" blue="0.84500002861022949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.8880000114440918" green="0.24899999797344208" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="White-Black">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

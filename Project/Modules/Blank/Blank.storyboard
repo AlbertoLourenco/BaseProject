@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Blank View Controller-->
+        <scene sceneID="Sla-ec-KMk">
+            <objects>
+                <viewController storyboardIdentifier="BlankView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bWB-jd-pOc" customClass="BlankViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2tI-N7-Uii">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blank module" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o5-Nq-DDo">
+                                <rect key="frame" x="151.66666666666666" y="357.66666666666669" width="110.66666666666666" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ckB-v6-o9k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <color key="textColor" name="Gray-GrayLight"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can use this page to mark position when you needs to test some screen calls." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOL-gs-ozh">
+                                <rect key="frame" x="20" y="388.66666666666669" width="374" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="Gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gt5-Gb-LVe"/>
+                        <color key="backgroundColor" name="White-Black"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hOL-gs-ozh" secondAttribute="trailing" constant="20" id="6fJ-90-goD"/>
+                            <constraint firstItem="hOL-gs-ozh" firstAttribute="centerX" secondItem="2tI-N7-Uii" secondAttribute="centerX" id="Bqq-Oo-KlA"/>
+                            <constraint firstItem="hOL-gs-ozh" firstAttribute="leading" secondItem="2tI-N7-Uii" secondAttribute="leading" constant="20" id="KPT-C1-3hF"/>
+                            <constraint firstItem="hOL-gs-ozh" firstAttribute="top" secondItem="4o5-Nq-DDo" secondAttribute="bottom" constant="10" id="Vrd-pB-Grv"/>
+                            <constraint firstItem="4o5-Nq-DDo" firstAttribute="centerX" secondItem="2tI-N7-Uii" secondAttribute="centerX" id="pgG-aM-DSA"/>
+                            <constraint firstItem="4o5-Nq-DDo" firstAttribute="centerY" secondItem="2tI-N7-Uii" secondAttribute="centerY" id="r3T-AK-pf8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCZ-Lv-McI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207.24637681159422" y="83.967391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Gray">
+            <color red="0.50499999523162842" green="0.50499999523162842" blue="0.50499999523162842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Gray-GrayLight">
+            <color red="0.26600000262260437" green="0.26600000262260437" blue="0.26600000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="White-Black">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
